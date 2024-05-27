@@ -1,0 +1,46 @@
+pagination = method by which a doucment os
+seperated into pages, and numbers are given
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+
+	<h1>This is <page id="1"></page></h1>
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus animi ea nobis magnam obcaecati accusantium laboriosam voluptas aliquid odio molestiae unde quo, quam, quos ab voluptatem maiores quibusdam fuga!</p>
+
+	<div class="pagination">
+		<a href="">></a>
+		<a class="active" href="lyrics.html" target="_blank">1</a>
+		<a href="myfirstsite.html" target="_blank">2</a>
+		<a href="https://www.google.com" target="_blank">3</a>
+		<a href="https://www.youtube.com/" target="_blank">4</a>
+		<a href=""><</a>
+	</div>
+	
+</body>
+</html>
+
+
+style.css
+
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: aqua;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(:active){
+    background-color: hsl(352, 92%, 46%);
+    border-radius: 5px;
+}
